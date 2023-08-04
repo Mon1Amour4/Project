@@ -60,11 +60,15 @@ function createColumnItem(button) {
 }
 
 function saveData() {
+  var SavedCounter = counter;
+  
   for (let index = 0; index < counter; index++) {
-    if (counter != 0) {
+    // if (counter != 0) {
       const getRow = document.getElementById("myColumn" + "_" + (counter - 1));
-      getRow.ATTRIBUTE_NODE;
-    }
+      var savedRowClass = getRow.className;
+      console.log(savedRowClass);
+      
+    // }
   }
 }
 
@@ -77,4 +81,5 @@ window.onload = function () {
   // Добавление элемента
   createColumn(myButton);
   createColumnItem(myButton);
+  saveData();
 };
